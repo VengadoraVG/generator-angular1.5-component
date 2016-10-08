@@ -1,4 +1,6 @@
-** estamos en desarrollo!!! esta cosa está muy lejos de estar completada :S **
+Para usarlo...
+
+    yo angular1.5-component
 
 Con la llegada de angular 1.5, los componentes han cambiado mucho o.o, este módulo de yeoman generará un scaffolding para un nuevo componente! lo único que necesitará será el nombre en kebab-case :O
 
@@ -16,7 +18,7 @@ TODO: a veces el prompt se "ensucia" con output del código de yeoman... investi
 
 ## scaffolding
 
-Crear una carpeta llamada `name`.
+Dentro de `app/`, Crear una carpeta llamada `name`.
 
 ### template
 
