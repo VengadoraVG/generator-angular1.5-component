@@ -11,6 +11,7 @@ Aún no inyecta los archivos .js en el index n.n'
 # Instalación
 
     $ git clone https://github.com/VengadoraVG/generator-angular1.5-component.git
+    $ cd generator-angular1.5-component
     $ sudo npm link
 
 ## Dependencias
