@@ -8,7 +8,12 @@ Con la llegada de angular 1.5, los componentes han cambiado mucho o.o, este mód
 
 Aún no inyecta los archivos .js en el index n.n'
 
-# Dependencias
+# Instalación
+
+    $ git clone https://github.com/VengadoraVG/generator-angular1.5-component.git
+    $ sudo npm link
+
+## Dependencias
 
 * esprima
 * escodegen
