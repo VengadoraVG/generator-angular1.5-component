@@ -1,3 +1,5 @@
+# Uso
+
 Aún no es estable, pero para usarlo...
 
     yo angular1.5-component
@@ -5,6 +7,20 @@ Aún no es estable, pero para usarlo...
 Con la llegada de angular 1.5, los componentes han cambiado mucho o.o, este módulo de yeoman genera un scaffolding para un nuevo componente! lo único que necesita es el nombre en kebab-case :O
 
 Aún no inyecta los archivos .js en el index n.n'
+
+# Dependencias
+
+* esprima
+* escodegen
+* prompt
+
+probablemente ya instalados
+
+* fs
+
+Se usó `esprima` para modificar los archivos javascript. También se usó `escodegen` para convertir de nuevo a un string lo parseado mediante esprima.
+
+Se usó `fs` para la creación de archivos y carpetas, pero probablemente ya lo tengas instalado.
 
 # developing notes...
 
