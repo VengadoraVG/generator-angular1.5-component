@@ -20,6 +20,19 @@ Aún no inyecta los archivos .js en el index n.n'
 * escodegen
 * prompt
 
+Para instalarlos:
+
+    $ sudo npm install esprima --save
+    $ sudo npm install escodegen --save
+    $ sudo npm install prompt --save
+
+Para verificar si ya están instalados:
+
+    $ node
+    > prompt = require('prompt');
+
+Si la consola se queja diciendo `Error: Cannot find module 'x'`, es porque la dependencia ya está instalada.
+
 probablemente ya instalados
 
 * fs
@@ -53,7 +66,8 @@ Dentro de la carpeta `app/name`, crea un archivo llamado `name.template.html` en
 Dentro de `app/name`, crea un archivo llamado `name.module.js`, su contenido es:
 
     angular.module(camelCaseName, []);
-    // camel case name es el nombre en camel case, duh!
+
+Donde `camelCaseName` es el nombre en camel case, duh!
 
 ### component
 
