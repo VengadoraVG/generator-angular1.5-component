@@ -20,24 +20,28 @@ Aún no inyecta los archivos .js en el index n.n'
 * escodegen
 * prompt
 
-Para instalarlos:
-
-    $ sudo npm install esprima --save
-    $ sudo npm install escodegen --save
-    $ sudo npm install prompt --save
-
 Para verificar si ya están instalados:
 
     $ node
     > prompt = require('prompt');
 
-Si la consola se queja diciendo `Error: Cannot find module 'x'`, es porque la dependencia ya está instalada.
+Si la consola se queja diciendo `Error: Cannot find module 'x'`, es porque la dependencia no está instalada, y deberás instalarla.
 
-probablemente ya instalados
+Para instalar cada una de las dependencias:
 
-* fs
+    $ sudo npm install esprima --save
+    $ sudo npm install escodegen --save
+    $ sudo npm install prompt --save
+
+respectivamente
 
 Se usó `esprima` para modificar los archivos javascript. También se usó `escodegen` para convertir de nuevo a un string lo parseado mediante esprima.
+
+Se usó `prompt`, para preguntar el nombre del componente
+
+### probablemente ya instaladas
+
+* fs
 
 Se usó `fs` para la creación de archivos y carpetas, pero probablemente ya lo tengas instalado.
 
