@@ -82,7 +82,8 @@ module.exports = generators.Base.extend({
 
             // template string
             obj.body[0].expression.arguments[1].properties[0].value.value =
-              context.kebabCaseName + '/' + context.kebabCaseName +
+              'components/' + context.kebabCaseName + '/' +
+              context.kebabCaseName +
               '.template.html';
 
             // context function name
