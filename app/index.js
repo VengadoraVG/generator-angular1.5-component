@@ -27,12 +27,17 @@ module.exports = generators.Base.extend({
 
     prompt.get(ioInputSchema, (function (context) {
       return function (err, data) {
-        var dir = 'app/' + data.kebabCaseName,
+        var dir = 'app/components/' + data.kebabCaseName,
             fs = require('fs');
 
         context.destinationDir = context.destinationRoot() + '/' + dir + '/';
         context.camelCaseName = context.kebabToCamel(data.kebabCaseName);
         context.kebabCaseName = data.kebabCaseName;
+
+        // creating components dir if it doesn't exists...
+        if (!fs.existsSync('app/components')) {
+          fs.mkdirSync('app/components');
+        }
 
         // creating containing dir
         if (!fs.existsSync(dir)) {
