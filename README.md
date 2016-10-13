@@ -6,6 +6,20 @@ Aún no es estable, pero para usarlo...
 
 Con la llegada de angular 1.5, los componentes han cambiado mucho o.o, este módulo de yeoman genera un scaffolding para un nuevo componente! lo único que necesita es el nombre en kebab-case :O
 
+En el `index.html`, debes inyectar los archivos js generados:
+
+    <script src="components/nombre-componente/nombre-componente.component.js"></script>
+    <script src="components/nombre-componente/nombre-componente.module.js"></script>
+
+Se debe añadir al array de componentes en `app.js` el nombre del componente que se creó, en camelCase algo así:
+
+    angular
+      .module('miApp', [
+        'ngAnimate',
+        // ...
+        'nombreComponente'
+    ]) // ...
+
 Aún no inyecta los archivos .js en el index n.n'
 
 # Instalación
